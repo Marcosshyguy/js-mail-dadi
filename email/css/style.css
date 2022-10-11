@@ -23,3 +23,7 @@ body{
     justify-content: space-around;
 }
 
+.d-none{
+    display: none;
+}
+
