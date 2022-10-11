@@ -4,9 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>Dices game</title>
 </head>
 <body>
+    <div class="container">
+        <h1>Dice Roller</h1>
+        <div class="row">
+            <div id="random-ai-dice" class="card d-none">
+                <i  id="ia-1"class="fa-solid fa-dice-one d-none"></i>
+                <i  id="ia-2"class="fa-solid fa-dice-two d-none"></i>
+                <i  id="ia-3"class="fa-solid fa-dice-three d-none"></i>
+                <i  id="ia-4"class="fa-solid fa-dice-four d-none"></i>
+                <i  id="ia-5"class="fa-solid fa-dice-five d-none"></i>
+                <i  id="ia-6"class="fa-solid fa-dice-six d-none"></i>
+            </div>
+            <div id="relation-operator" class="card">
+                <i id="greater-than" class="fa-solid fa-greater-than d-none"></i>
+                <i id="less-than" class="fa-solid fa-less-than d-none"></i>
+                <i id="equal-to" class="fa-solid fa-equals d-none"></i>
+            </div>
+            <div id="random-player-dice" class="card">
+                <i id="player-1" class="fa-solid fa-dice-one d-none"></i>
+                <i id="player-2" class="fa-solid fa-dice-two d-none"></i>
+                <i id="player-3" class="fa-solid fa-dice-three d-none"></i>
+                <i id="player-4" class="fa-solid fa-dice-four d-none"></i>
+                <i id="player-5" class="fa-solid fa-dice-five d-none"></i>
+                <i id="player-6" class="fa-solid fa-dice-six d-none"></i>
+            </div>
+        </div>
+        <div>
+            <button id="roll">Roll <i class="fa-solid fa-dice"></i></button>
+            <button id="retry">Retry <i class="fa-solid fa-rotate-right"></i></button>
+        </div>
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
